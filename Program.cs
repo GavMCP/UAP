@@ -21,7 +21,7 @@ namespace UAP
             GetFile.ReadMemoryStream();
             List<IRecordModel> ExtractedRecords = GetFile.GetRecordList();
             SortRecords.Sort(ExtractedRecords);
-           
+           Console.WriteLine("END");
             
         }
     }

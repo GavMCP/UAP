@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UAP.Interfaces;
+using System.IO;
 
 namespace UAP.Services
 {
@@ -32,10 +33,15 @@ namespace UAP.Services
             OutputToFile(UAPlist);
         }
 
-
+        /// <summary>
+        /// Write to output file.
+        /// </summary>
         public void OutputToFile<T>(IList<T> UAPList )
         {
-
+            foreach(IRecordModel record in UAPList)
+            {
+                
+            }
         }
 
     }
